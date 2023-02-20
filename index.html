@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="blur"></div>
+    <div class="container">
+        <form action="">
+            <h1>Please sing up</h1>
+            <div class="input-container first-name">
+                <div class="placeholder fName">First name</div>
+                <input class="first-name_input" type="text" ></input>
+            </div>
+            <div class="input-container last-name">
+                <div class="placeholder LName">Last name</div>
+                <input class="last-name_input"></input>
+            </div>
+            <div class="input-container email">
+                <div class="placeholder em-l">Email</div>
+                <input class="email_input"></input>
+            </div>
+            <div class="input-container password">
+                <div class="placeholder ps-d">Password</div>
+                <input class="password_input"></input>
+            </div>
+          
+            
+            <input id="agree" type="checkbox"></input>
+            <label for="agree">I agree with Privacy Policy</label>
+            <button type="button" class="sign-up " disabled>Sign Up</button>
+        </form>
+    </div> 
+
+    <div class="modal-congrat">
+        <div class="modal_top">
+            <div class="circle">
+                <div class="check-mark"></div>
+            </div>
+        </div>
+        <div class="modal_bottom">
+            <h2>Great!</h2>
+            <p>Your account has been created successfully.</p>
+            <div class="explore-button">Start Exploring</div>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>   
+</body>
+</html>

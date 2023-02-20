@@ -1,0 +1,194 @@
+*,
+::after,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(195, 225, 225);
+    
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 80px 0;
+    font-size: 20px;
+    font-family: serif;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-container {
+    position: relative;
+    background-color: lightcyan;
+    height: 50px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+input {
+    width: 100%;
+    background-color: lightcyan;
+    border-radius: 6px;
+    border: none;
+    height: 48px;
+    font-size: 20px;
+    padding: 20px 10px 10px;
+    outline: none;
+}
+.placeholder {
+    font-size: 26px;
+    color: gray;
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    pointer-events: none;
+}
+.placeholder_small {
+    font-size: 16px;
+    top: 0px;
+    transition: all 0.4s;
+}
+.checked-placeholder {
+    top: 0px;
+    font-size: 16px;
+    transition: all 10ms;
+}
+#agree {
+    width: 20px;
+    position: relative;
+}
+label {
+    position: relative;
+    top: -17px;
+}
+button {
+    width: 100%;
+    height: 50px;
+    font-size: inherit;
+    background-color: royalblue;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    cursor: default;
+}
+.enabled-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px -3px royalblue;
+    font-size: 20.5px;
+    transition-duration: 0.2s;
+}
+
+.checked {
+    border: 1px solid green;
+}
+.unchecked {
+    border: 1px solid red;
+}
+.checked::after,
+.unchecked:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 8px;
+    background-position: center;
+    background-size: cover;
+}
+.checked::after {
+    background-image: url(./img/pngegg.png);
+}
+.unchecked:after {
+    background-image: url(./img/x-mark.png);
+}
+  /* ---розмиття екрану на фоні модалки */
+.blur{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(124, 124, 124);
+    opacity: 0;
+    z-index: -1;
+}
+
+
+/* ------модалка---- */
+
+.modal-congrat{
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 400px;
+    border-radius: 14px;
+    background-color: lightgreen;
+    padding: 50% auto;
+    z-index: -1;
+    opacity: 0;
+}
+.modal_top{
+    width: 100%;
+    height: 40%;
+    border-radius: 14px 14px 0px 0px;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    width: 120px;
+    height: 120px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+}
+.check-mark{
+    width: 60px;
+    height: 40px;
+    border-bottom: 6px solid #fff;
+    border-left: 6px solid #fff;
+    position: relative;
+    left: 5px;
+    bottom: 5px;
+}
+h2{
+    text-align: center;
+    line-height: 100px;
+    font-size: 46px;
+}
+
+.modal_bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_bottom>p{
+    margin-bottom: 30px;
+    
+}
+
+
+
+
+.explore-button{
+    color: #fff;
+    background-color: #db9c00;
+    width: 160px;
+    height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
